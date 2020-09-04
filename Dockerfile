@@ -1,5 +1,7 @@
 FROM debian:buster
 
 COPY srcs/service_start.sh .
+COPY srcs/wordpress.tar.gz var/www/
+COPY srcs/localhost /etc/nginx/sites-available/
 
-CMD bash service_start.sh
+RUN bash service_start.sh
