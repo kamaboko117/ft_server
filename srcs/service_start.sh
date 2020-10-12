@@ -1,9 +1,8 @@
 apt-get update
-apt-get install -y nginx
-apt-get -y install php-cli php-mysql php-curl php-gd php-intl
+apt-get install nginx -y
 
-tar -xzvf var/www/wordpress.tar.gz
+apt-get install mariadb-server
 
-ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
+apt-get install php-fpm php-mysql -y
 
-service nginx start
+# service nginx start && tail -f /dev/null
