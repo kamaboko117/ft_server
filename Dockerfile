@@ -15,3 +15,6 @@ COPY srcs/config.inc.php .
 COPY srcs/wp-config.php .
 
 CMD bash service_start.sh
+
+EXPOSE 80
+EXPOSE 443
