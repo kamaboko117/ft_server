@@ -12,6 +12,6 @@ COPY srcs/service_start.sh .
 COPY srcs/test.php .
 COPY srcs/default .
 COPY srcs/config.inc.php .
-COPY srcs/wp.config.php .
+COPY srcs/wp-config.php .
 
 CMD bash service_start.sh
